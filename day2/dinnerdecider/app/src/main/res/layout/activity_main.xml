@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:layout_margin="8dp"
+    tools:context=".MainActivity">
+
+    <Space
+        android:layout_width="match_parent"
+        android:layout_height="87dp" />
+
+    <ImageButton
+        android:id="@+id/imageButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        app:srcCompat="@drawable/dd_logo"
+        tools:layout_editor_absoluteX="132dp"
+        tools:layout_editor_absoluteY="125dp" />
+
+<!--    <TextView-->
+<!--        android:id="@+id/foodview"-->
+<!--        android:layout_width="2dp"-->
+<!--        android:layout_height="16dp"-->
+<!--        android:layout_gravity="center_horizontal"-->
+<!--        android:text="111111"-->
+<!--        android:textColor="@color/colorAccent"-->
+<!--        tools:layout_editor_absoluteX="176dp"-->
+<!--        tools:layout_editor_absoluteY="307dp" />-->
+
+
+    <TextView
+        android:id="@+id/foodview"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:text="food will display here"
+        android:textColor="@color/colorPrimary"
+        android:textColorLink="#00CC6565"
+        android:textSize="30sp"
+        app:fontFamily="sans-serif-black" />
+
+    <Space
+        android:layout_width="match_parent"
+        android:layout_height="77dp" />
+
+    <EditText
+        android:id="@+id/foodtext"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:hint="add new food..."
+        tools:layout_editor_absoluteX="109dp"
+        tools:layout_editor_absoluteY="434dp" />
+
+    <Space
+        android:layout_width="match_parent"
+        android:layout_height="61dp" />
+
+    <Button
+        android:id="@+id/button1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:onClick="addfood_click"
+        android:text="add food"
+        tools:layout_editor_absoluteX="147dp"
+        tools:layout_editor_absoluteY="531dp" />
+
+    <Button
+        android:id="@+id/button3"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:onClick="decide_click"
+        android:text="Decide" />
+
+</LinearLayout>

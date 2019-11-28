@@ -9,6 +9,7 @@ import android.view.ViewGroup
 import android.widget.Space
 import android.widget.TableRow
 import android.widget.TextView
+import androidx.core.view.marginBottom
 import androidx.core.view.marginTop
 import kotlinx.android.synthetic.main.activity_main.*
 
@@ -36,15 +37,20 @@ class MainActivity : AppCompatActivity() {
         // Set new table row layout parameters.
         val layoutParams = TableRow.LayoutParams(TableRow.LayoutParams.WRAP_CONTENT)
         tableRow.setLayoutParams(layoutParams)
-        tableRow.setBackgroundColor(Color.BLUE)
+
+        layoutParams.height=45
+        layoutParams.setMargins(3,3,4,3)
+        tableRow.setBackgroundColor(Color.GREEN)
 
         // add values into row by calling addView()
         var textviewtmp = TextView(this)
         textviewtmp.text=col1
+        textviewtmp.setBackgroundColor(Color.WHITE)
         tableRow.addView(textviewtmp,0)
 
         textviewtmp = TextView(this)
-        textviewtmp.text=col1
+        textviewtmp.text=col2
+        textviewtmp.setBackgroundColor(Color.WHITE)
         tableRow.addView(textviewtmp,1)
 
         // Finally add the created row row into layout

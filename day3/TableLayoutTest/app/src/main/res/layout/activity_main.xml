@@ -6,8 +6,7 @@
     android:layout_height="match_parent"
     tools:context=".MainActivity"
     android:stretchColumns="*"
-    android:showDividers="middle|beginning|end"
-    android:divider="@drawable/abc_vector_test"
+    android:background="#ffcccccc"
     android:id="@+id/tableLayout"
     >
 
@@ -15,8 +14,9 @@
     <TableRow
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:divider="@drawable/abc_vector_test"
         android:showDividers="middle"
+        android:background="#ffffcc99"
+        android:layout_margin="0.5dp"
         >
 
         <EditText
@@ -27,7 +27,9 @@
             android:ems="10"
             android:inputType="textPersonName"
             android:padding="10dp"
-            android:hint="enter android version..."/>
+            android:hint="enter android version..."
+            android:background="#ffffcc99"
+            android:layout_margin="0.5dp"/>
     </TableRow>
 
     <TableRow
@@ -60,15 +62,21 @@
     <TableRow
         android:layout_width="match_parent"
         android:layout_height="50dp"
-        android:background="@color/colorAccent">
+        android:background="#ffffcc99"
+        android:layout_margin="1.5dp"
+        >
 
         <TextView
+            android:background="@color/colorAccent"
+            android:layout_margin="0.5dp"
             android:id="@+id/textView4"
             android:layout_width="wrap_content"
             android:layout_height="match_parent"
             android:text="version" />
 
         <TextView
+            android:background="@color/colorAccent"
+            android:layout_margin="1.5dp"
             android:id="@+id/textView3"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"

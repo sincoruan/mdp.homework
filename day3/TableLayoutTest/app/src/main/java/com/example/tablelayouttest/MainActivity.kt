@@ -36,7 +36,7 @@ class MainActivity : AppCompatActivity() {
         val tableRow = TableRow(getApplicationContext())
         // Set new table row layout parameters.
         val layoutParams = TableRow.LayoutParams(TableRow.LayoutParams.WRAP_CONTENT)
-        tableRow.setLayoutParams(layoutParams)
+        //tableRow.setLayoutParams(layoutParams)
 
         layoutParams.height=45
         layoutParams.setMargins(3,3,4,3)
@@ -46,11 +46,14 @@ class MainActivity : AppCompatActivity() {
         var textviewtmp = TextView(this)
         textviewtmp.text=col1
         textviewtmp.setBackgroundColor(Color.WHITE)
+        textviewtmp.layoutParams = layoutParams
         tableRow.addView(textviewtmp,0)
 
         textviewtmp = TextView(this)
+        textviewtmp.layoutParams = layoutParams
         textviewtmp.text=col2
         textviewtmp.setBackgroundColor(Color.WHITE)
+
         tableRow.addView(textviewtmp,1)
 
         // Finally add the created row row into layout

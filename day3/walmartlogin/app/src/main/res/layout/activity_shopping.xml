@@ -4,13 +4,48 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".ShoppingActivity">
+    tools:context=".ShoppingActivity"
+    android:orientation="vertical">
 
     <TextView
         android:id="@+id/sayhello"
-        android:layout_width="wrap_content"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:gravity="right"
+        android:textSize="18sp"
         tools:layout_editor_absoluteX="220dp"
         tools:layout_editor_absoluteY="35dp" />
+
+    <TextView
+        android:id="@+id/title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:text="Shop By Categories"
+        android:textSize="24sp"
+        tools:layout_editor_absoluteX="220dp"
+        tools:layout_editor_absoluteY="35dp" />
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/shoopingcategory"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+
+
+    <!--    <GridLayout-->
+<!--        android:id="@+id/shoppinglist"-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="match_parent"-->
+<!--        android:columnCount="2">-->
+
+<!--        <Button-->
+<!--            android:layout_width="210dp"-->
+<!--            android:layout_height="50dp"></Button>-->
+
+<!--        <Button-->
+<!--            android:layout_width="210dp"-->
+<!--            android:layout_height="50dp"></Button>-->
+<!--    </GridLayout>-->
+
 </LinearLayout>
 

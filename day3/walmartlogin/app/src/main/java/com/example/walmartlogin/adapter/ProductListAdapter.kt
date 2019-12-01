@@ -32,10 +32,10 @@ class ProductListAdapter(var context: Context, private val productList: Array<Pr
     }
 
     override fun onBindViewHolder(holder: MyViewHolder, position: Int) {
-        holder.color.text = productList[position].color
-        holder.desc.text = productList[position].desc
-        holder.title.text = productList[position].title
-        holder.price.text = productList[position].price.toString()
+        holder.color.text = "color: "+productList[position].color
+        holder.desc.text = "desc: "+productList[position].desc
+        holder.title.text = "title: "+productList[position].title
+        holder.price.text = "price: "+productList[position].price.toString()
         holder.image.setImageResource( productList[position].image)
 
         holder.itemView.setOnClickListener{
@@ -51,7 +51,6 @@ class ProductListAdapter(var context: Context, private val productList: Array<Pr
         return ProductListAdapter.MyViewHolder(productView)
         TODO("not implemented") //To change body of created functions use File | Settings | File Templates.
     }
-
 
     // Return the size of your dataset (invoked by the layout manager)
     override fun getItemCount() = productList.size

@@ -47,7 +47,8 @@ class MyAdapter(var context: Context, private val myDataset: Array<Category>) :
         holder.name.text = myDataset[position].name
 
         holder.image.setOnClickListener{
-            //Toast.makeText(context,"clicked!",Toast.LENGTH_LONG).show()
+            var category = myDataset[position].name
+            Toast.makeText(context,"“You have chosen the $category category of shopping",Toast.LENGTH_LONG).show()
 
             var intent = Intent(context,ProductListActivity::class.java)
             intent.putExtra("category",myDataset[position])

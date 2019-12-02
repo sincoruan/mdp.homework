@@ -4,11 +4,13 @@ import android.content.Context
 import android.graphics.Color
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
+import android.view.Gravity
 import android.view.View
 import android.view.ViewGroup
 import android.widget.Space
 import android.widget.TableRow
 import android.widget.TextView
+import android.widget.Toast
 import androidx.core.view.marginBottom
 import androidx.core.view.marginTop
 import kotlinx.android.synthetic.main.activity_main.*
@@ -28,7 +30,16 @@ class MainActivity : AppCompatActivity() {
     }
 
     fun click_add(view: View) {
-        addrow(android_version.text.toString(),android_code.text.toString())
+        var col1 = android_version.text.toString();
+        var col2 = android_code.text.toString();
+        if(col1.isBlank()||col1.isEmpty()||col2.isBlank()||col2.isEmpty()||col1.equals("")||col2.equals("")){
+
+            var toast = Toast.makeText(this,"the input can not be null",Toast.LENGTH_LONG)
+            toast.setGravity(Gravity.TOP,100,200)
+            toast.show()
+        }
+        else
+            addrow(android_version.text.toString(),android_code.text.toString())
     }
     fun addrow(col1:String,col2:String){
 
@@ -40,19 +51,21 @@ class MainActivity : AppCompatActivity() {
 
         layoutParams.height=45
         layoutParams.setMargins(3,3,4,3)
-        tableRow.setBackgroundColor(Color.GREEN)
+        tableRow.setBackgroundColor(Color.WHITE)
 
         // add values into row by calling addView()
         var textviewtmp = TextView(this)
         textviewtmp.text=col1
         textviewtmp.setBackgroundColor(Color.WHITE)
         textviewtmp.layoutParams = layoutParams
+        textviewtmp.setBackgroundColor(resources.getColor(R.color.colorAccent))
+
         tableRow.addView(textviewtmp,0)
 
         textviewtmp = TextView(this)
         textviewtmp.layoutParams = layoutParams
         textviewtmp.text=col2
-        textviewtmp.setBackgroundColor(Color.WHITE)
+        textviewtmp.setBackgroundColor(resources.getColor(R.color.colorAccent))
 
         tableRow.addView(textviewtmp,1)
 

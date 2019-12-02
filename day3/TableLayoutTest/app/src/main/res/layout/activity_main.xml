@@ -68,7 +68,7 @@
 
         <TextView
             android:background="@color/colorAccent"
-            android:layout_margin="0.5dp"
+            android:layout_margin="1.5dp"
             android:id="@+id/textView4"
             android:layout_width="wrap_content"
             android:layout_height="match_parent"

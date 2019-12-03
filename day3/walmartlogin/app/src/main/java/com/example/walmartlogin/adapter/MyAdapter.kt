@@ -11,6 +11,7 @@ import android.widget.TextView
 import android.widget.Toast
 import androidx.appcompat.view.menu.ActionMenuItemView
 import androidx.recyclerview.widget.RecyclerView
+import com.example.walmartlogin.ClothingListActivity
 import com.example.walmartlogin.ProductListActivity
 import com.example.walmartlogin.R
 import com.example.walmartlogin.domain.Category
@@ -50,9 +51,17 @@ class MyAdapter(var context: Context, private val myDataset: Array<Category>) :
             var category = myDataset[position].name
             Toast.makeText(context,"“You have chosen the $category category of shopping",Toast.LENGTH_LONG).show()
 
-            var intent = Intent(context,ProductListActivity::class.java)
-            intent.putExtra("category",myDataset[position])
-            context.startActivity(intent)
+            if(category=="cloth"){
+                var intent = Intent(context,ClothingListActivity::class.java)
+                intent.putExtra("category",myDataset[position])
+                context.startActivity(intent)
+            }
+            else{
+                var intent = Intent(context,ProductListActivity::class.java)
+                intent.putExtra("category",myDataset[position])
+                context.startActivity(intent)
+            }
+
         }
     }
 

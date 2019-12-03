@@ -25,4 +25,11 @@ class Product :Serializable{
         this.itemid = itemid
         this.desc = desc
     }
+
+    override fun toString(): String {
+        return """
+            title:$title 
+            price:$price
+        """.trimIndent()
+    }
 }

@@ -11,8 +11,11 @@
         android:id="@+id/sayhello"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:layout_marginRight="50dp"
+        android:layout_marginBottom="10dp"
+        android:layout_marginTop="10dp"
         android:gravity="right"
-        android:textSize="18sp"
+        android:textSize="24sp"
         tools:layout_editor_absoluteX="220dp"
         tools:layout_editor_absoluteY="35dp" />
 

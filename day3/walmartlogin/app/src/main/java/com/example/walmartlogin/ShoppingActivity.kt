@@ -63,35 +63,35 @@ class ShoppingActivity : AppCompatActivity() {
     fun initData() {
         var cate1 = Category("electronic", R.drawable.product1)
         cate1.productList = arrayOf(
-            Product("mac",15.0,"red",R.drawable.product1,"1","this is a very good mac"),
-            Product("mac",15.0,"red",R.drawable.product1,"1","this is a very good mac"),
-            Product("mac",15.0,"red",R.drawable.product1,"1","this is a very good mac"),
-            Product("mac",15.0,"red",R.drawable.product1,"1","this is a very good mac"),
-            Product("mac",15.0,"red",R.drawable.product1,"1","this is a very good mac")
+            Product("mac",15.0,"red",R.drawable.ep1,"1","this is a very good mac"),
+            Product("pro",18.0,"red",R.drawable.ep2,"2","this is a very good mac"),
+            Product("del",25.0,"red",R.drawable.ep3,"3","this is a very good mac"),
+            Product("hp",35.0,"red",R.drawable.ep4,"4","this is a very good mac"),
+            Product("acer",45.0,"red",R.drawable.ep5,"5","this is a very good mac")
         )
         var cate2 = Category("cloth", R.drawable.product2)
         cate2.productList = arrayOf(
-            Product("mac",15.0,"red",R.drawable.product1,"1","this is a very good mac"),
-            Product("mac",15.0,"red",R.drawable.product1,"1","this is a very good mac"),
-            Product("mac",15.0,"red",R.drawable.product1,"1","this is a very good mac"),
-            Product("mac",15.0,"red",R.drawable.product1,"1","this is a very good mac"),
-            Product("mac",15.0,"red",R.drawable.product1,"1","this is a very good mac")
+            Product("cloth1",25.0,"red",R.drawable.product1,"1","this is a very good cloth"),
+            Product("cloth2",35.0,"red",R.drawable.product2,"1","this is a very good cloth"),
+            Product("cloth3",55.0,"red",R.drawable.product3,"1","this is a very good cloth"),
+            Product("cloth4",65.0,"red",R.drawable.product1,"1","this is a very good cloth"),
+            Product("cloth5",85.0,"red",R.drawable.product1,"1","this is a very good cloth")
         )
         var cate3 = Category("cosmetics", R.drawable.product3)
         cate3.productList = arrayOf(
-            Product("mac",15.0,"red",R.drawable.product1,"1","this is a very good mac"),
-            Product("mac",15.0,"red",R.drawable.product1,"1","this is a very good mac"),
-            Product("mac",15.0,"red",R.drawable.product1,"1","this is a very good mac"),
-            Product("mac",15.0,"red",R.drawable.product1,"1","this is a very good mac"),
-            Product("mac",15.0,"red",R.drawable.product1,"1","this is a very good mac")
+            Product("lip",15.0,"red",R.drawable.product1,"1","this is a very good mac"),
+            Product("facer",15.0,"red",R.drawable.product1,"1","this is a very good mac"),
+            Product("mac",15.0,"red",R.drawable.product2,"1","this is a very good mac"),
+            Product("mac",15.0,"red",R.drawable.product3,"1","this is a very good mac"),
+            Product("mac",15.0,"red",R.drawable.product4,"1","this is a very good mac")
         )
         var cate4 = Category("food", R.drawable.product4)
         cate4.productList = arrayOf(
-            Product("mac",15.0,"red",R.drawable.product1,"1","this is a very good mac"),
-            Product("mac",15.0,"red",R.drawable.product1,"1","this is a very good mac"),
-            Product("mac",15.0,"red",R.drawable.product1,"1","this is a very good mac"),
-            Product("mac",15.0,"red",R.drawable.product1,"1","this is a very good mac"),
-            Product("mac",15.0,"red",R.drawable.product1,"1","this is a very good mac")
+            Product("apple",15.0,"red",R.drawable.product1,"1","this is a very good mac"),
+            Product("pear",35.0,"red",R.drawable.product1,"1","this is a very good mac"),
+            Product("other",45.0,"red",R.drawable.product1,"1","this is a very good mac"),
+            Product("mac1",75.0,"red",R.drawable.product1,"1","this is a very good mac"),
+            Product("mac2",15.0,"red",R.drawable.product1,"1","this is a very good mac")
         )
         myDataset = arrayOf(cate1,cate2,cate3,cate4)
     }
